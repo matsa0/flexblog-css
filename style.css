@@ -39,7 +39,7 @@ img{
     margin: 0 auto;
     max-width: 1250px;
     justify-content: space-between; 
-    flex: wrap;
+    flex-wrap: wrap;
     align-items: stretch;
 }
 
@@ -50,3 +50,132 @@ img{
 .upper-infos a{
     color:rgb(248, 248, 248);
 }
+
+/*Header*/
+.header-bg{
+    background-color: #2c70ff;
+}
+
+.header{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a{
+    color: rgb(248, 248, 248);
+}
+
+.header-logo a{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 15px; /*quando diminui ele não fica grudado no container*/
+}
+
+.header-itens ul{ /*Navbar*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-itens a{ /*Navbar*/
+    font-size: 20px;
+    display: block;
+    padding: 0px 15px; 
+    transition: 0.3s;
+}
+
+.header-itens a:hover{
+    color:#122ab2;
+}
+
+
+/*Título principal*/
+.main-title{
+    font-size: 48px;
+    line-height: 1;
+    max-width: 1250px;
+    margin: 60px auto;
+    padding: 0 15px;
+}
+
+/*Sobre*/
+.about{
+    border-top: #2c70ff 2px solid;
+    border-bottom: #2c70ff 2px solid;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 60px 0; /*padding top botton*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-info{
+    flex: 2 1 300px;
+    padding: 0 15px;
+}
+
+.about-info h1{
+    font-size: 48px;
+}
+
+.about-info p{
+    font-size: 20px;
+    color: #7c7c7c;
+    line-height: 1.4; /*Espaçamento entre linhas padrão*/
+    margin: 24px auto;
+    text-align: justify;
+
+}
+
+.about-img{
+    flex: 1 1 160px; /*quebrar a imagem quando chegar em 160px*/
+    margin: 0 30px;
+}
+
+/*Produtos*/
+.products{
+    max-width: 1250px;
+    margin: 60px auto; /*centralizar*/
+}
+
+.products h1{
+    font-size: 48px;
+    margin: 60px 15px;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 0 15px
+}
+
+.products-item{
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+}
+
+.products-item h2{
+    font-size: 48px;
+    color: #a4a4a4;
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.purple{
+    border-top: 8px solid #ae81ff;
+}
+
+.pink{
+    border-top: 8px solid #f9265e;
+}
+
+.blue{
+    border-top: 8px solid #66d9eb;
+}
+
