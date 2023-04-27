@@ -179,3 +179,98 @@ img{
     border-top: 8px solid #66d9eb;
 }
 
+
+/*Preços*/
+.price{
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.card-price{
+    flex: 1 1 260px;
+    margin: 20px;
+    border: solid 4px white;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-price h2{
+    padding: 20px 0;
+    font-size: 42px;
+    color: #a4a4a4;
+    text-align: center;
+}
+
+.card-price span{
+    border-top: solid 4px white;
+    border-bottom: solid 4px white;
+    padding: 10px 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    display: block; /*o span é display in line então precisa definir pra aplicar modificações*/
+    max-width: 300px;
+    margin: 0  auto;
+}
+
+.card-price sup{
+    font-size: 24px;
+}
+
+.card-price ul{
+    padding: 15px auto;
+    line-height: 2.5;
+    color: #7c7c7c;
+    flex: 1;
+}
+
+.card-price li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.card-price li::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #2c70ff;
+    border-radius: 3px;
+    align-self: center;
+}
+
+
+.card-price a{
+    display: block;
+    border: #222222 solid 4px;
+    text-align: center;
+    margin: 15px auto;
+    text-decoration: none;
+    color: #222222;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px){
+    .price{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .price .card-price:nth-child(3){
+        order: -2;
+    }
+    .price .card-price:nth-child(2){
+        order: -1;
+    }
+    .price .card-price:nth-child(1){
+        order: 0;
+    }
+}
