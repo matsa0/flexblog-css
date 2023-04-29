@@ -66,6 +66,13 @@ img{
     align-items: center;
 }
 
+@media(max-width: 600px)
+{
+    .header{
+        justify-content: center;
+    }
+}
+
 .header a{
     color: rgb(248, 248, 248);
 }
@@ -75,6 +82,7 @@ img{
     font-size: 36px;
     margin: 0 15px; /*quando diminui ele não fica grudado no container*/
 }
+
 
 .header-itens ul{ /*Navbar*/
     display: flex;
@@ -272,5 +280,137 @@ img{
     }
     .price .card-price:nth-child(1){
         order: 0;
+    }
+}
+
+/*Qualidade*/
+.quality{
+    max-width: 1250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.quality-item{
+    margin: 15px 55px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.quality-item h2{
+    font-size: 36px;
+    color:#a4a4a4;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+.quality-item p{
+    color: #7c7c7c;
+    font-size: 20px;
+}
+
+.purple-left h2{
+    border-left: solid 8px #ae81ff;
+
+}
+
+.pink-left h2{
+    border-left: solid 8px #f9265e;
+}
+
+.blue-left h2{
+    border-left: solid 8px #66d9eb;
+}
+
+/*Newsletter*/
+.newsletter{
+    background-color: #f7f7f7;
+    padding: 60px calc((100% - 1250px)/2); /*sem fazer div dentro de div no html e usar o margin: 0 auto;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info{
+    flex: 1 1 260px;
+    margin: 0 15px;
+}
+
+.newsletter-info h2{
+    font-size: 48px;
+    color: #a4a4a4;
+}
+
+.newsletter-info p{
+    color: #7c7c7c;
+    font-size: 20px;
+    max-width: 230px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.newsletter-form{
+    flex: 2 1 260px;
+    margin: 0 15px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input{
+    border: solid 4px #2c70ff;
+    flex: 3 1 200px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0px;
+    border-radius: 0px;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    background: transparent;
+}
+
+.newsletter-form button{
+    flex: 1 1 260px;
+    color: #f7f7f7;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #2c70ff;
+    margin: 0;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+}
+
+@media (max-width: 600px){
+    .newsletter-form button{
+        font-size: 25px;
+    }
+}   
+
+/*Footer*/
+.footer{
+    height: 200px;
+    display: flex;
+    background-color: #2c70ff;
+    align-items: center;
+}
+
+.footer p{
+    flex: 1;
+    text-align: center;
+    font-size: 36px;
+    color: #122ab2;
+}
+
+@media (max-width: 600px)
+{
+    .footer{
+        height: 150px;
+    }
+
+    .footer p{
+        font-size: 25px;
     }
 }
